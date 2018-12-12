@@ -56,3 +56,10 @@ typings/
 
 # dotenv environment variables file
 .env
+
+/.idea/
+/tmp/
+/bin/
+dist.zip
+*.test
+*.swp
