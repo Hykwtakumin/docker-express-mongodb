@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "name": "domingo-server",
+  "alias": "domingo-server",
+  "env": {
+    "NODE_ENV": "@node_env",
+    "DATABASE": "@database",
+    "PORT": "@port"
+  }
+}

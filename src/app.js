@@ -7,7 +7,8 @@ const morgan = require('morgan');
 const { catchAll, notFound } = require('./error');
 
 const app = express();
-const userRouter = require('./user/user.router');
+//const userRouter = require('./user/user.router');
+const domingoRouter = require("./domingo/domingo.router");
 
 app.use(helmet());
 app.use(cors());
@@ -19,7 +20,8 @@ app.get('/', (req, res) => {
   res.json({ message: 'It works!' });
 });
 
-app.use('/api/users', userRouter);
+//app.use('/api/users', userRouter);
+app.use('/api/domingos', domingoRouter);
 
 app.use(notFound);
 app.use(catchAll);

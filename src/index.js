@@ -20,7 +20,7 @@ mongoose.connection.on('error', (err) => {
   process.exit(1);
 });
 
-require('./user/user.model');
+require('./domingo/domingo.model');
 
 app.listen(config.PORT, () => {
   Object.keys(config).forEach((key) => winston.info(`${key}: ${config[key]}`));
